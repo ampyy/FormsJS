@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />l̥
+  </head>
+  <body>
+    <h2>Signup Form</h2>
+
+    <div id="" class="main-container">
+      <form class="content">
+        <div class="container">
+          <h2>Sign Up</h2>
+          <label for="username"><b>Username</b></label>
+          <input type="text" id="username" placeholder="Enter Username" name="username" />
+        <label for="" class="message" id="username-message"></label>
+            <br>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="email" placeholder="Enter Email" name="email" />
+          <label for="" class="message" id="email-message"></label>
+          <br>
+
+          <label for="psw"><b>Password</b></label>
+          <span class="fa fa-eye eye" id="show-password"></span>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            id="psw"
+            
+          /> 
+          <label for="" class="message" id="psw-message"></label>
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            id="psw-repeat"
+            
+          />
+          <label for="" class="message" id="cpsw-message"></label>
+            <button type="reset" id="reset-btn" class="resetbtn">Reset</button>
+            <button type="submit" id="submit-btn" class="signupbtn">Sign Up</button>
+             
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="modal-container">
+        <div id="modal">
+            <p>Thanks for Signing Up. You are Signed Up!</p>
+            <div id="close-btn">&times;</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+#submit-btn {
+  background-color: #0074d9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+.signupbtn {
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+.container h2{
+    text-align: center;
+}
+
+.main-container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: #888;
+}
+
+
+.content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 5px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.message {
+  font-size: 0.8rem;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -20px;
+}
+.eye {
+  font-size: 1rem;
+  float: right;
+  margin-left: -25px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 1100px) {
+  .signupbtn {
+    width: 100%;
+  }
+  .content {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .signupbtn {
+    width: 100%;
+  }
+  .content {
+    width: 80%;
+  }
+}
+
+
+#modal {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation-name: animateModal;
+  animation-duration: 0.4s;
+}
+
+#close-btn {
+  font-size: 3rem;
+}
+
+#close-btn:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
